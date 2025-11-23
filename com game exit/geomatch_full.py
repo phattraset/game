@@ -276,11 +276,11 @@ class GameManager:
         self.grid = Grid()
         self.score = 0
         self.time_left = 180.0
-        self.target_score = 3000
+        self.target_score = 2000
         # สถานะที่เป็นไปได้: "MENU", "RUNNING", "PAUSED", "LOSE", "WIN"
         self.game_state = "MENU" 
         self.fall_timer = 0
-        self.fall_speed = 1.0
+        self.fall_speed = 0.5
 
     def reset_game(self):
         """รีเซ็ตทุกอย่างเพื่อเริ่มเกมใหม่"""
@@ -289,7 +289,7 @@ class GameManager:
         self.time_left = 180.0
         self.game_state = "RUNNING"
         self.fall_timer = 0
-        self.fall_speed = 1.0
+        self.fall_speed = 0.5
         self.grid.spawn_new_shape() 
 
         # Music Logic
@@ -444,7 +444,7 @@ def draw_menu(screen, font, SCREEN_WIDTH, SCREEN_HEIGHT, current_volume, is_mute
     screen.blit(vol_surf, (start_x, start_y + button_size + 10))
     
     # 5. แสดงชื่อเพลง (พร้อมขอบ)
-    song_name_text = "Song name: Encounter"
+    song_name_text = "Song name: Sis Puella Magica!"
     song_color = YELLOW # กำหนดสีข้อความหลัก
     small_font = pygame.font.Font(None, 24) 
     
