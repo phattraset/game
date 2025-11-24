@@ -8,7 +8,7 @@ import time
 
 # การตั้งค่ากระดานและวัตถุ
 SHAPES = ['Triangle', 'Square', 'Circle', 'Pentagon', 'Star', 'Diamond']
-COLORS = {'Triangle': 'RED', 'Square': 'BLUE', 'Circle': 'GREEN', 'Pentagon': 'YELLOW', 'Star': 'PURPLE', 'Diamond': 'WHITE'}
+COLORS = {'Triangle': 'RED', 'Square': 'BLUE', 'Circle': 'PINK', 'Pentagon': 'YELLOW', 'Star': 'PURPLE', 'Diamond': 'WHITE'}
 
 GRID_WIDTH = 12
 GRID_HEIGHT = 22 # 2 แถวบนสุดใช้สำหรับ Spawn
@@ -27,11 +27,12 @@ RED = (255, 0, 0)
 GREEN = (0, 255, 0)
 DARK_GREEN = (0, 150, 0)
 DARK_RED = (150, 0, 0)
+PINK = (255, 105, 180)
 
 COLOR_MAP = {
     'RED': (255, 0, 0),
     'BLUE': (0, 0, 255),
-    'GREEN': (0, 255, 0),
+    'PINK': (255, 105, 180),
     'YELLOW': (255, 255, 0),
     'PURPLE': (128, 0, 128),
     'WHITE': (255, 255, 255),
